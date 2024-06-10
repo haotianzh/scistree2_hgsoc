@@ -1,0 +1,63 @@
+
+RAxML-NG v. 0.9.0git (CellPHY branch) released on 08.07.2021 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+RAxML-NG was called at 23-May-2024 16:39:44 as follows:
+
+/home/haz19024/softwares/cellphy/bin/raxml-ng-cellphy-linux --mutmap --msa ov2295_789_891.vcf --model GT10+FO --tree ov2295_789_891.vcf.raxml.bestTree --opt-branches off --prefix ov2295_789_891.vcf.Mapped --force perf_threads --threads 30 --redo
+
+Analysis options:
+  run mode: Mutation mapping
+  start tree(s): user
+  random seed: 1716496784
+  SIMD kernels: AVX2
+  parallelization: PTHREADS (30 threads), thread pinning: OFF
+
+WARNING: Running in REDO mode: existing checkpoints are ignored, and all result files will be overwritten!
+
+WARNING: Running in FORCE mode: some safety checks are disabled!
+
+[00:00:00] Reading alignment from file: ov2295_789_891.vcf
+[00:00:00] Loaded alignment with 891 taxa and 789 sites
+
+Alignment comprises 1 partitions and 789 sites
+
+Partition 0: noname
+Model: GT10+FO
+Alignment sites: 789
+Gaps: 69.61 %
+Invariant sites: 0.76 %
+
+
+[00:00:00] Loading user starting tree(s) from: ov2295_789_891.vcf.raxml.bestTree
+[00:00:00] Data distribution: max. partitions/sites/weight per thread: 1 / 27 / 270
+
+Starting ML tree search with 1 distinct starting trees
+
+[00:00:00] Tree #1, initial LogLikelihood: -97821.509710
+
+[00:00:00 -97821.509710] Initial branch length optimization
+[00:00:00 -97821.509710] Model parameter optimization (eps = 0.100000)
+
+[00:00:27] Tree #1, final logLikelihood: -85845.121458
+
+
+Optimized model parameters:
+
+   Partition 0: noname
+   Rate heterogeneity: NONE
+   Base frequencies (ML): 0.223022 0.277715 0.276860 0.217521 0.000852 0.001134 0.000587 0.000534 0.000977 0.000798 
+   Substitution rates (ML): 0.001000 0.001000 0.001000 1.670204 1.609968 1.852041 0.001000 0.001000 0.001000 0.001000 0.001000 1.670204 0.001000 0.001000 1.000000 1.680435 0.001000 0.001000 0.001000 1.609968 0.001000 1.000000 0.001000 1.640364 0.001000 0.001000 1.852041 0.001000 1.680435 1.640364 1.000000 1.680435 1.609968 1.852041 0.001000 1.640364 1.670204 0.001000 1.852041 0.001000 1.670204 1.609968 1.640364 1.680435 1.000000 
+
+Branch-labeled tree saved to: /data/haotian/scistree/hgsoc/ov2295_789_891.vcf.Mapped.raxml.mutationMapTree
+Per-branch mutation list saved to: /data/haotian/scistree/hgsoc/ov2295_789_891.vcf.Mapped.raxml.mutationMapList
+
+Execution log saved to: /data/haotian/scistree/hgsoc/ov2295_789_891.vcf.Mapped.raxml.log
+
+Analysis started: 23-May-2024 16:39:44 / finished: 23-May-2024 16:40:11
+
+Elapsed time: 27.274 seconds
+

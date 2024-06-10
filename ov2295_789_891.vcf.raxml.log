@@ -1,0 +1,203 @@
+
+RAxML-NG v. 0.9.0git (CellPHY branch) released on 08.07.2021 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+RAxML-NG was called at 23-May-2024 15:35:06 as follows:
+
+/home/haz19024/softwares/cellphy/bin/raxml-ng-cellphy-linux --search --msa ov2295_789_891.vcf --model GT10+FO --msa-format vcf --prefix ov2295_789_891.vcf --tree pars{1} --force perf_threads --threads 30 --redo
+
+Analysis options:
+  run mode: ML tree search
+  start tree(s): parsimony (1)
+  random seed: 1716492905
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  fast spr radius: AUTO
+  spr subtree cutoff: 1.000000
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX2
+  parallelization: PTHREADS (30 threads), thread pinning: OFF
+
+WARNING: Running in REDO mode: existing checkpoints are ignored, and all result files will be overwritten!
+
+WARNING: Running in FORCE mode: some safety checks are disabled!
+
+[00:00:00] Reading alignment from file: ov2295_789_891.vcf
+[00:00:00] Loaded alignment with 891 taxa and 789 sites
+
+Alignment comprises 1 partitions and 789 sites
+
+Partition 0: noname
+Model: GT10+FO
+Alignment sites: 789
+Gaps: 69.61 %
+Invariant sites: 0.76 %
+
+
+[00:00:00] Generating 1 parsimony starting tree(s) with 891 taxa
+[00:00:00] Data distribution: max. partitions/sites/weight per thread: 1 / 27 / 270
+
+Starting ML tree search with 1 distinct starting trees
+
+[00:00:00 -153007.809911] Initial branch length optimization
+[00:00:00 -98980.107861] Model parameter optimization (eps = 10.000000)
+[00:00:47 -92830.854970] AUTODETECT spr round 1 (radius: 5)
+[00:01:00 -88760.147637] AUTODETECT spr round 2 (radius: 10)
+[00:01:15 -87715.653693] AUTODETECT spr round 3 (radius: 15)
+[00:01:33 -86969.599536] AUTODETECT spr round 4 (radius: 20)
+[00:01:54 -86748.123751] AUTODETECT spr round 5 (radius: 25)
+[00:02:17 -86714.518528] SPR radius for FAST iterations: 25 (autodetect)
+[00:02:17 -86714.518528] Model parameter optimization (eps = 3.000000)
+[00:02:31 -86642.386009] FAST spr round 1 (radius: 25)
+[00:03:02 -86205.501758] FAST spr round 2 (radius: 25)
+[00:03:27 -86064.910066] FAST spr round 3 (radius: 25)
+[00:03:49 -85999.952266] FAST spr round 4 (radius: 25)
+[00:04:07 -85965.484217] FAST spr round 5 (radius: 25)
+[00:04:24 -85956.693712] FAST spr round 6 (radius: 25)
+[00:04:39 -85955.357248] FAST spr round 7 (radius: 25)
+[00:04:54 -85955.275954] Model parameter optimization (eps = 1.000000)
+[00:04:56 -85952.966671] SLOW spr round 1 (radius: 5)
+[00:05:18 -85942.677517] SLOW spr round 2 (radius: 5)
+[00:05:39 -85936.860661] SLOW spr round 3 (radius: 5)
+[00:06:00 -85936.716179] SLOW spr round 4 (radius: 5)
+[00:06:21 -85936.711868] SLOW spr round 5 (radius: 10)
+[00:06:45 -85927.788048] SLOW spr round 6 (radius: 5)
+[00:07:10 -85923.669873] SLOW spr round 7 (radius: 5)
+[00:07:33 -85921.416825] SLOW spr round 8 (radius: 5)
+[00:07:54 -85921.142060] SLOW spr round 9 (radius: 5)
+[00:08:15 -85921.140307] SLOW spr round 10 (radius: 10)
+[00:08:40 -85916.456348] SLOW spr round 11 (radius: 5)
+[00:09:04 -85911.568790] SLOW spr round 12 (radius: 5)
+[00:09:28 -85907.395546] SLOW spr round 13 (radius: 5)
+[00:09:50 -85905.543468] SLOW spr round 14 (radius: 5)
+[00:10:11 -85905.003668] SLOW spr round 15 (radius: 5)
+[00:10:32 -85905.000353] SLOW spr round 16 (radius: 10)
+[00:10:57 -85901.186079] SLOW spr round 17 (radius: 5)
+[00:11:21 -85897.571043] SLOW spr round 18 (radius: 5)
+[00:11:44 -85897.469524] SLOW spr round 19 (radius: 5)
+[00:12:05 -85897.467662] SLOW spr round 20 (radius: 10)
+[00:12:32 -85897.379587] SLOW spr round 21 (radius: 15)
+[00:13:46 -85892.605196] SLOW spr round 22 (radius: 5)
+[00:14:11 -85890.723026] SLOW spr round 23 (radius: 5)
+[00:14:34 -85890.720429] SLOW spr round 24 (radius: 10)
+[00:15:04 -85889.006230] SLOW spr round 25 (radius: 5)
+[00:15:28 -85888.427806] SLOW spr round 26 (radius: 5)
+[00:15:50 -85888.426977] SLOW spr round 27 (radius: 10)
+[00:16:19 -85888.078583] SLOW spr round 28 (radius: 5)
+[00:16:42 -85887.301884] SLOW spr round 29 (radius: 5)
+[00:17:04 -85887.301158] SLOW spr round 30 (radius: 10)
+[00:17:33 -85887.259548] SLOW spr round 31 (radius: 15)
+[00:18:44 -85885.577000] SLOW spr round 32 (radius: 5)
+[00:19:09 -85884.417599] SLOW spr round 33 (radius: 5)
+[00:19:32 -85884.338219] SLOW spr round 34 (radius: 10)
+[00:20:02 -85884.336775] SLOW spr round 35 (radius: 15)
+[00:21:13 -85884.062559] SLOW spr round 36 (radius: 5)
+[00:21:37 -85884.052364] SLOW spr round 37 (radius: 10)
+[00:22:16 -85883.779614] SLOW spr round 38 (radius: 5)
+[00:22:40 -85882.506355] SLOW spr round 39 (radius: 5)
+[00:23:02 -85882.504045] SLOW spr round 40 (radius: 10)
+[00:23:29 -85882.503655] SLOW spr round 41 (radius: 15)
+[00:24:39 -85882.398289] SLOW spr round 42 (radius: 5)
+[00:25:03 -85882.368439] SLOW spr round 43 (radius: 10)
+[00:25:41 -85882.366344] SLOW spr round 44 (radius: 15)
+[00:26:45 -85882.329740] SLOW spr round 45 (radius: 20)
+[00:27:50 -85881.385807] SLOW spr round 46 (radius: 5)
+[00:28:15 -85880.216100] SLOW spr round 47 (radius: 5)
+[00:28:38 -85880.212904] SLOW spr round 48 (radius: 10)
+[00:29:10 -85879.610866] SLOW spr round 49 (radius: 5)
+[00:29:34 -85878.547801] SLOW spr round 50 (radius: 5)
+[00:29:56 -85878.545948] SLOW spr round 51 (radius: 10)
+[00:30:23 -85876.929912] SLOW spr round 52 (radius: 5)
+[00:30:47 -85876.680702] SLOW spr round 53 (radius: 5)
+[00:31:09 -85876.680156] SLOW spr round 54 (radius: 10)
+[00:31:37 -85875.579293] SLOW spr round 55 (radius: 5)
+[00:32:00 -85875.573134] SLOW spr round 56 (radius: 10)
+[00:32:34 -85874.928903] SLOW spr round 57 (radius: 5)
+[00:32:57 -85874.927770] SLOW spr round 58 (radius: 10)
+[00:33:30 -85874.927664] SLOW spr round 59 (radius: 15)
+[00:34:35 -85873.959946] SLOW spr round 60 (radius: 5)
+[00:34:59 -85873.945148] SLOW spr round 61 (radius: 10)
+[00:35:38 -85873.942937] SLOW spr round 62 (radius: 15)
+[00:36:44 -85873.498311] SLOW spr round 63 (radius: 5)
+[00:37:08 -85872.902593] SLOW spr round 64 (radius: 5)
+[00:37:31 -85872.899600] SLOW spr round 65 (radius: 10)
+[00:38:01 -85872.898241] SLOW spr round 66 (radius: 15)
+[00:39:07 -85872.551237] SLOW spr round 67 (radius: 5)
+[00:39:32 -85871.943870] SLOW spr round 68 (radius: 5)
+[00:39:54 -85871.884519] SLOW spr round 69 (radius: 10)
+[00:40:24 -85871.883973] SLOW spr round 70 (radius: 15)
+[00:41:37 -85868.556940] SLOW spr round 71 (radius: 5)
+[00:42:02 -85866.045526] SLOW spr round 72 (radius: 5)
+[00:42:25 -85865.990183] SLOW spr round 73 (radius: 10)
+[00:42:55 -85865.987799] SLOW spr round 74 (radius: 15)
+[00:44:02 -85865.954024] SLOW spr round 75 (radius: 20)
+[00:45:07 -85865.645970] SLOW spr round 76 (radius: 5)
+[00:45:32 -85861.700282] SLOW spr round 77 (radius: 5)
+[00:45:55 -85861.045441] SLOW spr round 78 (radius: 5)
+[00:46:17 -85861.042794] SLOW spr round 79 (radius: 10)
+[00:46:45 -85860.088559] SLOW spr round 80 (radius: 5)
+[00:47:09 -85859.783166] SLOW spr round 81 (radius: 5)
+[00:47:31 -85859.600995] SLOW spr round 82 (radius: 5)
+[00:47:53 -85859.360044] SLOW spr round 83 (radius: 5)
+[00:48:14 -85859.359828] SLOW spr round 84 (radius: 10)
+[00:48:38 -85859.359770] SLOW spr round 85 (radius: 15)
+[00:49:52 -85859.130552] SLOW spr round 86 (radius: 5)
+[00:50:16 -85858.242499] SLOW spr round 87 (radius: 5)
+[00:50:39 -85855.814391] SLOW spr round 88 (radius: 5)
+[00:51:00 -85854.566754] SLOW spr round 89 (radius: 5)
+[00:51:22 -85854.543459] SLOW spr round 90 (radius: 10)
+[00:51:46 -85852.815176] SLOW spr round 91 (radius: 5)
+[00:52:10 -85851.620624] SLOW spr round 92 (radius: 5)
+[00:52:33 -85851.619668] SLOW spr round 93 (radius: 10)
+[00:53:01 -85851.619504] SLOW spr round 94 (radius: 15)
+[00:54:09 -85851.372751] SLOW spr round 95 (radius: 5)
+[00:54:34 -85847.922400] SLOW spr round 96 (radius: 5)
+[00:54:56 -85847.921191] SLOW spr round 97 (radius: 10)
+[00:55:26 -85847.824778] SLOW spr round 98 (radius: 15)
+[00:56:33 -85847.699333] SLOW spr round 99 (radius: 5)
+[00:56:57 -85847.326585] SLOW spr round 100 (radius: 5)
+[00:57:19 -85847.324655] SLOW spr round 101 (radius: 10)
+[00:57:49 -85847.324151] SLOW spr round 102 (radius: 15)
+[00:58:56 -85847.220162] SLOW spr round 103 (radius: 5)
+[00:59:21 -85847.204811] SLOW spr round 104 (radius: 10)
+[01:00:02 -85846.746864] SLOW spr round 105 (radius: 5)
+[01:00:25 -85846.743233] SLOW spr round 106 (radius: 10)
+[01:00:59 -85846.742575] SLOW spr round 107 (radius: 15)
+[01:02:04 -85846.742269] SLOW spr round 108 (radius: 20)
+[01:03:09 -85846.720240] SLOW spr round 109 (radius: 25)
+[01:04:29 -85846.716696] Model parameter optimization (eps = 0.100000)
+
+[01:04:38] ML tree search #1, logLikelihood: -85845.047024
+
+
+Optimized model parameters:
+
+   Partition 0: noname
+   Rate heterogeneity: NONE
+   Base frequencies (ML): 0.223475 0.276763 0.276190 0.218673 0.000854 0.001138 0.000591 0.000537 0.000979 0.000801 
+   Substitution rates (ML): 0.001000 0.001000 0.001000 1.677782 1.613385 1.851416 0.001000 0.001000 0.001000 0.001000 0.001000 1.677782 0.001000 0.001000 1.000000 1.688969 0.001000 0.001000 0.001000 1.613385 0.001000 1.000000 0.001000 1.644112 0.001000 0.001000 1.851416 0.001000 1.688969 1.644112 1.000000 1.688969 1.613385 1.851416 0.001000 1.644112 1.677782 0.001000 1.851416 0.001000 1.677782 1.613385 1.644112 1.688969 1.000000 
+
+
+Final LogLikelihood: -85845.047024
+
+AIC score: 175278.094047 / AICc score: 6615738.094047 / BIC score: 183657.448827
+Free parameters (model + branch lengths): 1794
+
+WARNING: Number of free parameters (K=1794) is larger than alignment size (n=789).
+         This might lead to overfitting and compromise tree inference results!
+
+
+Best ML tree saved to: /data/haotian/scistree/hgsoc/ov2295_789_891.vcf.raxml.bestTree
+Optimized model saved to: /data/haotian/scistree/hgsoc/ov2295_789_891.vcf.raxml.bestModel
+
+Execution log saved to: /data/haotian/scistree/hgsoc/ov2295_789_891.vcf.raxml.log
+
+Analysis started: 23-May-2024 15:35:06 / finished: 23-May-2024 16:39:44
+
+Elapsed time: 3878.312 seconds
+
